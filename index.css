@@ -6,48 +6,47 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #C4B5FD;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* padding: 68px 85px; */
 }
 
+/* code layout */
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
-    margin: 15vh 15vh;
-    height: 30%;
-    width: 75vh;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 850px;
 }
 
 #home, #guest {
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
-    width: 50%;
+    height: 40%;
 }
 
-/* .add-points {
-    display: flex;
-    justify-content: space-between;
+/* styles */
+/* p {
+    display: block;
+    padding: 50px;
 } */
 
-.card {
-    background-color: #111827;
-    padding: 0px 18px;
+h3 {
+    font-size: 4em;
     color: #f2f2f2;
-    font-size: 500%;
-    font-weight: 400;
-    border-radius: 5px;
+    text-shadow: 0 0 #1f1f1f;
 }
 
-.container h3 {
+.card {
+    background-color: #1f1f1f;
+    color: #f2f2f2;
     font-weight: bold;
-    color: #F43F5E;
-    font-size: 200%;
+    font-size: 4em;
+    padding: 30px 50px;
+    border-radius: 5px;
 }
 
 .btn {

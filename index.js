@@ -1,12 +1,17 @@
 // when a button is clicked, add it to the points
 
 let homePoints = document.getElementById("home-points");
+let homeCount = 0;
 let guestPoints = document.getElementById("guest-points");
-console.log("Hello");
+let guestCount = 0;
 
-plusOne = (team) => {
-    console.log("clicked");
-    let counter = document.getElementById(team + "-plus-one")
-    console.log(counter)
-    
+
+addPoints = (team, points) => {
+    if (team == "home") {
+        homeCount += points;
+        homePoints.innerText = homeCount
+    } else if (team == "guest") {
+        guestCount += points;
+        guestPoints.innerText = guestCount
+    }
 }
